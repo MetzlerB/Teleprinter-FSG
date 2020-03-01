@@ -869,7 +869,7 @@ void enableDirectDataTransmission(){
   delay(waitTimeUntilDataIsSentToFS);
 
   if(DEBUG_LEVEL >= 1){
-    Serial.println("You can exit this mode by entering a ! (enableDirectDataTransmission())");
+    Serial.println("You can exit this mode by entering 'a' ! (enableDirectDataTransmission())");
   }
 
   String baudotString = "";
