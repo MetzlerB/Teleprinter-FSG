@@ -607,7 +607,7 @@ bool initializeCall(String number){
   //this will initialize the number 
   //wait 5sec and so simulate the call 
   //TODO add code here later
-
+  //temporary solution press "y" to init call, any other button to end it  
   delay(5000);
 
   while(!Serial.available()){
