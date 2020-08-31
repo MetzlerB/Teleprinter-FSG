@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Fernschreiber)(type KiCad)(uri ${KIPRJMOD}/Fernschreiber.pretty)(options "")(descr ""))
+)
