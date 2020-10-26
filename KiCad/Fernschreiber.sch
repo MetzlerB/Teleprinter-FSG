@@ -311,130 +311,45 @@ $EndComp
 Wire Wire Line
 	3550 1250 3550 1300
 $Comp
-L RF_Module:ESP32-WROOM-32 U3
-U 1 1 5EDACC24
-P 7650 3900
-F 0 "U3" H 7650 5481 50  0000 C CNN
-F 1 "ESP32-WROOM-32" H 7650 5390 50  0000 C CNN
-F 2 "Fernschreiber:ESP32_Joy-it" H 7650 2400 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 7350 3950 50  0001 C CNN
-	1    7650 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR014
 U 1 1 5EDCDA55
-P 7650 5400
-F 0 "#PWR014" H 7650 5150 50  0001 C CNN
-F 1 "GND" H 7655 5227 50  0000 C CNN
-F 2 "" H 7650 5400 50  0001 C CNN
-F 3 "" H 7650 5400 50  0001 C CNN
-	1    7650 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 5300 7650 5400
-Wire Wire Line
-	8900 3800 8250 3800
-Wire Wire Line
-	6450 5600 6450 4150
-Wire Wire Line
-	8900 3800 8900 5750
-$Comp
-L Connector:Conn_01x05_Female J11
-U 1 1 5EDFA426
-P 9750 3300
-F 0 "J11" H 9778 3326 50  0000 L CNN
-F 1 "12,13,14,3V3,GND" H 9778 3235 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9750 3300 50  0001 C CNN
-F 3 "~" H 9750 3300 50  0001 C CNN
-	1    9750 3300
+P 8100 2750
+F 0 "#PWR014" H 8100 2500 50  0001 C CNN
+F 1 "GND" H 8105 2577 50  0000 C CNN
+F 2 "" H 8100 2750 50  0001 C CNN
+F 3 "" H 8100 2750 50  0001 C CNN
+	1    8100 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J10
-U 1 1 5EDFF05C
-P 9750 2700
-F 0 "J10" H 9778 2676 50  0000 L CNN
-F 1 "TX,RX,3V3,GND" H 9778 2585 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9750 2700 50  0001 C CNN
-F 3 "~" H 9750 2700 50  0001 C CNN
-	1    9750 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Female J12
+L Connector:Conn_01x05_Female J10
 U 1 1 5EE0130E
-P 9750 3900
-F 0 "J12" H 9778 3926 50  0000 L CNN
-F 1 "18,19,23,3V3,GND" H 9778 3835 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9750 3900 50  0001 C CNN
-F 3 "~" H 9750 3900 50  0001 C CNN
-	1    9750 3900
+P 8250 1200
+F 0 "J10" H 8278 1226 50  0000 L CNN
+F 1 "18,19,23,3V3,GND" H 8278 1135 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8250 1200 50  0001 C CNN
+F 3 "~" H 8250 1200 50  0001 C CNN
+	1    8250 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 3700 8700 3700
+	6450 5600 9250 5600
+Text Label 2600 2800 2    50   ~ 0
+Spannungsumkehr_Relai
 Wire Wire Line
-	6450 5600 8700 5600
-Text Label 2600 2950 0    50   ~ 0
-Spannungsumkehr
+	8050 1200 7950 1200
 Wire Wire Line
-	9550 2900 8350 2900
-Wire Wire Line
-	8250 3000 8350 3000
-Wire Wire Line
-	8350 2900 8350 3000
-Wire Wire Line
-	9550 2800 8250 2800
-Wire Wire Line
-	9550 3300 8250 3300
-Wire Wire Line
-	9550 3400 8250 3400
-Wire Wire Line
-	9550 3500 8250 3500
-Wire Wire Line
-	9550 3900 8250 3900
-Wire Wire Line
-	9550 4000 8250 4000
-Wire Wire Line
-	9550 4100 8400 4100
-Wire Wire Line
-	8400 4100 8400 4300
-Wire Wire Line
-	8400 4300 8250 4300
-Text Label 8300 2500 0    50   ~ 0
+	8050 1300 7950 1300
+Text Label 7950 1000 2    50   ~ 0
 3V3
 Wire Wire Line
-	7650 2500 8300 2500
-Text Label 9450 2700 2    50   ~ 0
-3V3
-Wire Wire Line
-	9450 2700 9550 2700
-Text Label 9450 3200 2    50   ~ 0
-3V3
-Wire Wire Line
-	9450 3200 9550 3200
-Text Label 9450 3800 2    50   ~ 0
-3V3
-Wire Wire Line
-	9450 3800 9550 3800
-Text Label 9450 3700 2    50   ~ 0
+	7950 1100 8050 1100
+Text Label 7950 1100 2    50   ~ 0
 GND
 Wire Wire Line
-	9450 3700 9550 3700
-Text Label 9450 3100 2    50   ~ 0
+	7950 1000 8050 1000
+Text Label 7350 4950 2    50   ~ 0
 GND
-Wire Wire Line
-	9450 3100 9550 3100
-Text Label 9450 2600 2    50   ~ 0
-GND
-Wire Wire Line
-	9450 2600 9550 2600
-Text Label 7550 5350 2    50   ~ 0
-GND
-Wire Wire Line
-	7550 5350 7650 5350
 $Comp
 L pspice:CAP C2
 U 1 1 5EDCE20E
@@ -544,16 +459,10 @@ Connection ~ 6450 4150
 Connection ~ 5950 2850
 Wire Wire Line
 	5950 2850 5950 3350
-Text Label 8250 3100 0    50   ~ 0
-Spannungsumkehr
-Wire Wire Line
-	8700 3700 8700 5600
 Wire Wire Line
 	6300 4150 6450 4150
 Wire Wire Line
-	4700 5750 8900 5750
-Wire Wire Line
-	5700 4250 5700 4550
+	4700 5750 9450 5750
 $Comp
 L Isolator:4N28 U2
 U 1 1 5EB4B826
@@ -566,7 +475,7 @@ F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 6000 4150 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 3950 5700 4050
+	5700 3950 5700 4000
 Connection ~ 5700 5400
 Wire Wire Line
 	5700 5400 5700 5500
@@ -684,7 +593,7 @@ F 4 "LW" H 5150 4700 50  0000 C CNN "Kommentar"
 $EndComp
 Connection ~ 4350 3650
 Wire Wire Line
-	4700 5750 4700 5050
+	4700 5750 4700 5500
 Wire Wire Line
 	4350 5000 4350 5400
 Wire Wire Line
@@ -695,19 +604,16 @@ Connection ~ 5400 3650
 Wire Wire Line
 	5400 3650 5700 3650
 $Comp
-L Connector:Conn_01x01_Male J4
+L Connector:Conn_01x01_Male J5
 U 1 1 5F388884
-P 5900 4550
-F 0 "J4" H 6008 4731 50  0000 C CNN
-F 1 "Test_Conn_Lesen_b_opto" H 6008 4640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5900 4550 50  0001 C CNN
-F 3 "~" H 5900 4550 50  0001 C CNN
-	1    5900 4550
-	-1   0    0    1   
+P 5500 4000
+F 0 "J5" H 5608 4181 50  0000 C CNN
+F 1 "Test_Conn_Lesen_b_opto" H 5608 4090 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5500 4000 50  0001 C CNN
+F 3 "~" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
 $EndComp
-Connection ~ 5700 4550
-Wire Wire Line
-	5700 4550 5700 5400
 $Comp
 L Connector:Conn_01x01_Male J1
 U 1 1 5F38E59F
@@ -720,25 +626,14 @@ F 3 "~" H 2400 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J9
-U 1 1 5F391AEC
-P 9100 4600
-F 0 "J9" H 9208 4781 50  0000 C CNN
-F 1 "Test_Conn_Schreiben" H 9208 4690 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9100 4600 50  0001 C CNN
-F 3 "~" H 9100 4600 50  0001 C CNN
-	1    9100 4600
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x01_Male J8
 U 1 1 5F394C7A
-P 8500 5100
-F 0 "J8" H 8608 5281 50  0000 C CNN
-F 1 "Test_Conn_Lesen_a_opto" H 8608 5190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8500 5100 50  0001 C CNN
-F 3 "~" H 8500 5100 50  0001 C CNN
-	1    8500 5100
+P 6250 5200
+F 0 "J8" H 6358 5381 50  0000 C CNN
+F 1 "Test_Conn_Lesen_a_opto_D16" H 6358 5290 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6250 5200 50  0001 C CNN
+F 3 "~" H 6250 5200 50  0001 C CNN
+	1    6250 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -760,9 +655,8 @@ Wire Wire Line
 Connection ~ 3250 2550
 Wire Wire Line
 	2650 2550 3250 2550
-Connection ~ 7650 2500
 Wire Wire Line
-	5950 1650 5950 2850
+	5950 2150 5950 2850
 $Comp
 L power:GND #PWR013
 U 1 1 5EDDAA57
@@ -800,33 +694,23 @@ F 3 "" H 6700 1000 50  0001 C CNN
 $EndComp
 Connection ~ 6700 1000
 Wire Wire Line
-	7650 2500 6700 2500
-Wire Wire Line
 	6700 1850 6700 2400
-Connection ~ 6700 2500
 Wire Wire Line
 	6700 2500 6550 2500
 Connection ~ 6700 2400
 Wire Wire Line
 	6700 2400 6700 2500
 $Comp
-L Connector:Conn_01x02_Female J7
+L Connector:Conn_01x02_Female J9
 U 1 1 5F6327D1
-P 6300 800
-F 0 "J7" V 6146 848 50  0000 L CNN
-F 1 "12V" V 6237 848 50  0000 L CNN
-F 2 "Fernschreiber:DECA MB310-500M02 Schraubklemmblock" H 6300 800 50  0001 C CNN
-F 3 "~" H 6300 800 50  0001 C CNN
-	1    6300 800 
-	0    -1   -1   0   
+P 6200 1000
+F 0 "J9" V 6046 1048 50  0000 L CNN
+F 1 "12V" V 6137 1048 50  0000 L CNN
+F 2 "Fernschreiber:DECA MB310-500M02 Schraubklemmblock" H 6200 1000 50  0001 C CNN
+F 3 "~" H 6200 1000 50  0001 C CNN
+	1    6200 1000
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5950 1650 6050 1650
-Wire Wire Line
-	6050 1650 6050 1550
-Connection ~ 6150 1550
-Wire Wire Line
-	6400 1550 6300 1550
 $Comp
 L power:GND #PWR08
 U 1 1 5ED37ADA
@@ -838,27 +722,11 @@ F 3 "" H 6150 1750 50  0001 C CNN
 	1    6150 1750
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J5
-U 1 1 5ECEBAF7
-P 6050 1350
-F 0 "J5" V 5896 1398 50  0000 L CNN
-F 1 "Step-Up" V 5987 1398 50  0000 L CNN
-F 2 "Fernschreiber:DECA MB310-500M02 Schraubklemmblock" H 6050 1350 50  0001 C CNN
-F 3 "~" H 6050 1350 50  0001 C CNN
-	1    6050 1350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6150 1550 6150 1750
 Connection ~ 6150 1750
 Wire Wire Line
 	6400 1000 6700 1000
-Wire Wire Line
-	6300 1000 6300 1550
-Connection ~ 6300 1550
-Wire Wire Line
-	6300 1550 6150 1550
 $Comp
 L Regulator_Linear:LD1117S12TR_SOT223 3V1
 U 1 1 5ECD3A0B
@@ -873,18 +741,223 @@ $EndComp
 Wire Wire Line
 	6150 1750 6400 1950
 Wire Wire Line
+	2600 2800 2600 2950
+Wire Wire Line
+	8650 4650 8600 4650
+Wire Wire Line
+	7950 2350 8050 2350
+$Comp
+L Fernschreiber:ESP32_Joy-it U3
+U 1 1 5F99E147
+P 8000 4250
+F 0 "U3" H 8000 5165 50  0000 C CNN
+F 1 "ESP32_Joy-it" H 8000 5074 50  0000 C CNN
+F 2 "Fernschreiber:ESP32_Joy-it" H 8000 5050 50  0001 C CNN
+F 3 "" H 8000 5050 50  0001 C CNN
+	1    8000 4250
+	1    0    0    -1  
+$EndComp
+Text Label 8650 4650 0    50   ~ 0
+Spannungsumkehr_Relai
+Wire Wire Line
+	7950 2150 8050 2150
+Text Label 7950 2250 2    50   ~ 0
+GND
+Wire Wire Line
+	7950 2250 8050 2250
+Text Label 7950 2150 2    50   ~ 0
+3V3
+Wire Wire Line
+	8050 2450 7950 2450
+$Comp
+L Connector:Conn_01x04_Female J12
+U 1 1 5EDFF05C
+P 8250 2250
+F 0 "J12" H 8278 2226 50  0000 L CNN
+F 1 "TX,RX,3V3,GND" H 8278 2135 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8250 2250 50  0001 C CNN
+F 3 "~" H 8250 2250 50  0001 C CNN
+	1    8250 2250
+	1    0    0    -1  
+$EndComp
+Text Label 7950 2450 2    50   ~ 0
+TX0
+Text Label 7950 2350 2    50   ~ 0
+RX0
+Text Label 8650 3850 0    50   ~ 0
+TX0
+Text Label 8650 3950 0    50   ~ 0
+RX0
+Wire Wire Line
+	8600 3850 8650 3850
+Wire Wire Line
+	8600 3950 8650 3950
+$Comp
+L Connector:Conn_01x05_Female J11
+U 1 1 5EDFA426
+P 8250 1750
+F 0 "J11" H 8278 1776 50  0000 L CNN
+F 1 "12,13,14,3V3,GND" H 8278 1685 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8250 1750 50  0001 C CNN
+F 3 "~" H 8250 1750 50  0001 C CNN
+	1    8250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1750 7950 1750
+Wire Wire Line
+	8050 1850 7950 1850
+Wire Wire Line
+	8050 1950 7950 1950
+Text Label 7950 1550 2    50   ~ 0
+3V3
+Wire Wire Line
+	7950 1650 8050 1650
+Text Label 7950 1650 2    50   ~ 0
+GND
+Wire Wire Line
+	7950 1550 8050 1550
+Text Label 7350 4750 2    50   ~ 0
+D12
+Wire Wire Line
+	7350 4750 7400 4750
+Text Label 7350 4650 2    50   ~ 0
+D14
+Text Label 7350 4850 2    50   ~ 0
+D13
+Wire Wire Line
+	7350 4650 7400 4650
+Wire Wire Line
+	7350 4850 7400 4850
+Text Label 7950 1750 2    50   ~ 0
+D12
+Text Label 7950 1950 2    50   ~ 0
+D14
+Text Label 7950 1850 2    50   ~ 0
+D13
+Text Label 8650 4250 0    50   ~ 0
+D18
+Text Label 8650 4150 0    50   ~ 0
+D19
+Text Label 8650 3650 0    50   ~ 0
+D23
+Wire Wire Line
+	8650 3650 8600 3650
+Wire Wire Line
+	8650 4150 8600 4150
+Wire Wire Line
+	8650 4250 8600 4250
+Text Label 7950 1200 2    50   ~ 0
+D18
+Text Label 7950 1300 2    50   ~ 0
+D19
+Text Label 7950 1400 2    50   ~ 0
+D23
+Wire Wire Line
+	7950 1400 8050 1400
+Text Label 6800 2500 0    50   ~ 0
+3V3
+Wire Wire Line
+	7350 4950 7400 4950
+Text Label 8100 2700 2    50   ~ 0
+GND
+Wire Wire Line
+	8100 2700 8100 2750
+Wire Wire Line
+	6700 2500 6800 2500
+Connection ~ 6700 2500
+Wire Wire Line
+	6450 5600 6450 5200
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5F391AEC
+P 4900 5500
+F 0 "J4" H 5008 5681 50  0000 C CNN
+F 1 "Test_Conn_Schreiben_D17" H 5008 5590 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4900 5500 50  0001 C CNN
+F 3 "~" H 4900 5500 50  0001 C CNN
+	1    4900 5500
+	-1   0    0    1   
+$EndComp
+Connection ~ 6450 5200
+Wire Wire Line
+	6450 5200 6450 4150
+Connection ~ 4700 5500
+Wire Wire Line
+	4700 5500 4700 5050
+Wire Wire Line
+	8600 4450 9450 4450
+Wire Wire Line
+	9450 4450 9450 5750
+Wire Wire Line
+	8600 4550 9250 4550
+Wire Wire Line
+	9250 4550 9250 5600
+Text Label 8650 5050 0    50   ~ 0
+3V3
+Text Label 8650 4950 0    50   ~ 0
+GND
+Wire Wire Line
+	8600 4950 8650 4950
+Wire Wire Line
+	8600 5050 8650 5050
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 5ECEBAF7
+P 5850 1950
+F 0 "J6" V 5696 1998 50  0000 L CNN
+F 1 "Step-Up" V 5787 1998 50  0000 L CNN
+F 2 "Fernschreiber:DECA MB310-500M02 Schraubklemmblock" H 5850 1950 50  0001 C CNN
+F 3 "~" H 5850 1950 50  0001 C CNN
+	1    5850 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
 	6400 2200 6700 2400
 Wire Wire Line
 	6400 1950 6400 2100
 $Comp
-L Connector:Conn_01x02_Male J6
+L Connector:Conn_01x02_Male J7
 U 1 1 5F3D7E24
 P 6200 2100
-F 0 "J6" H 6308 2281 50  0000 C CNN
+F 0 "J7" H 6308 2281 50  0000 C CNN
 F 1 "Test_Conn_3V3" H 6308 2190 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 2100 50  0001 C CNN
 F 3 "~" H 6200 2100 50  0001 C CNN
 	1    6200 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FC87152
+P 5850 2200
+F 0 "#PWR0101" H 5850 1950 50  0001 C CNN
+F 1 "GND" H 5855 2027 50  0000 C CNN
+F 2 "" H 5850 2200 50  0001 C CNN
+F 3 "" H 5850 2200 50  0001 C CNN
+	1    5850 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2150 5850 2200
+Wire Wire Line
+	6150 1550 6400 1550
+$Comp
+L power:GND #PWR0102
+U 1 1 5FD8A441
+P 6450 900
+F 0 "#PWR0102" H 6450 650 50  0001 C CNN
+F 1 "GND" H 6455 727 50  0000 C CNN
+F 2 "" H 6450 900 50  0001 C CNN
+F 3 "" H 6450 900 50  0001 C CNN
+	1    6450 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 900  6450 900 
+Connection ~ 5700 4000
+Wire Wire Line
+	5700 4000 5700 4050
+Wire Wire Line
+	5700 4250 5700 5400
 $EndSCHEMATC
