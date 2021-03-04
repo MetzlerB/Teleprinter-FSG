@@ -1,0 +1,10 @@
+Dioden Löcher größer
+Diode kontrolieren D4 entfernen
+Optokopler footprint ändern
+Relaai Spulen löcher und andere löcher großer
+Powersupply rework
+Anschlussstellen besser beschriften
+Optokopler lesen auf Drain hängen
+
+Relais umkonfigurieren ! 
+
