@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name 12V_to_5V)(type KiCad)(uri ${KIPRJMOD}/12V_to_5V.pretty)(options "")(descr ""))
-)
